@@ -213,6 +213,26 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap books_stack_of_three1 {
+            get {
+                object obj = ResourceManager.GetObject("books-stack-of-three1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap books_stack_of_three11 {
+            get {
+                object obj = ResourceManager.GetObject("books-stack-of-three11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap i1 {
             get {
                 object obj = ResourceManager.GetObject("i1", resourceCulture);

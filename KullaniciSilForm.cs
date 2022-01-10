@@ -22,6 +22,11 @@ namespace WindowsFormsApp1
         {
             var kullanicililar = c.Kullanicis.ToList();
             dataGridView1.DataSource = kullanicililar.ToList();
+
+            dataGridView1.Columns[2].Visible = false;
+            dataGridView1.Columns[4].Visible = false;
+            dataGridView1.Columns[5].Visible = false;
+            dataGridView1.Columns[6].Visible = false;
         }
         private void KullaniciSilForm_Load(object sender, EventArgs e)
         {

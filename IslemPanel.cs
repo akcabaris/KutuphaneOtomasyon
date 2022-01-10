@@ -44,6 +44,7 @@ namespace WindowsFormsApp1
                 BtnKullaniciDuzenle.Visible = false;
             }
 
+
             KullaniciListForm kListeForm = new KullaniciListForm();
             kListeForm.MdiParent = this;
             kListeForm.Show();
@@ -65,6 +66,10 @@ namespace WindowsFormsApp1
                 BtnKitapDuzenle.Visible = false;
             }
 
+            KitapListForm kitapL = new KitapListForm();
+            kitapL.MdiParent = this;
+            kitapL.Show();
+
         }
 
         private void BtnKullaniciEkle_Click(object sender, EventArgs e)
@@ -79,6 +84,48 @@ namespace WindowsFormsApp1
             KullaniciSilForm kSil = new KullaniciSilForm();
             kSil.MdiParent = this;
             kSil.Show();
+        }
+
+        private void BtnKullaniciDuzenle_Click(object sender, EventArgs e)
+        {
+            KullaniciGuncelle kGun = new KullaniciGuncelle();
+            kGun.MdiParent = this;
+            kGun.Show();
+        }
+
+        private void BtnKitapEkle_Click(object sender, EventArgs e)
+        {
+            KitapEkleForm ekleKForm = new KitapEkleForm();
+            ekleKForm.MdiParent = this;
+            ekleKForm.Show();
+        }
+
+        private void BtnKitapSil_Click(object sender, EventArgs e)
+        {
+            KitapSilForm silKForm = new KitapSilForm();
+            silKForm.MdiParent = this;
+            silKForm.Show();
+        }
+
+        private void BtnKitapDuzenle_Click(object sender, EventArgs e)
+        {
+            KitapDuzenleForm dznKForm = new KitapDuzenleForm();
+            dznKForm.MdiParent = this;
+            dznKForm.Show();
+        }
+
+        private void BtnOduncİslem_Click(object sender, EventArgs e)
+        {
+            OduncForm oduncF = new OduncForm();
+            oduncF.MdiParent = this;
+            oduncF.Show();
+        }
+
+        private void BtnTeslimAl_Click(object sender, EventArgs e)
+        {
+            TeslimAlForm teslimF = new TeslimAlForm();
+            teslimF.MdiParent = this;
+            teslimF.Show();
         }
     }
 }

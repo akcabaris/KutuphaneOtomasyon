@@ -20,6 +20,7 @@ namespace WindowsFormsApp1
 
         private void BtnEkle_Click(object sender, EventArgs e)
         {
+            //uj
             Context c = new Context();
             Kullanici k = new Kullanici();
             k.kullaniciTc = Convert.ToInt32(TxtTCNo.Text);
@@ -27,7 +28,6 @@ namespace WindowsFormsApp1
             k.kullaniciAdSoyad = TxtAdSoyad.Text;
             k.kullaniciTipi = TxtTipi.Text;
             k.KullaniciMail = TxtMail.Text;
-            k.kullaniciCeza = Convert.ToInt32(TxtCeza.Text);
 
             c.Kullanicis.Add(k);
             c.SaveChanges();

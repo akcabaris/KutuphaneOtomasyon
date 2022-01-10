@@ -12,28 +12,35 @@ namespace WindowsFormsApp1
 {
     public partial class KitapEkleForm : Form
     {
-        
         public KitapEkleForm()
         {
             InitializeComponent();
         }
-        Context c = new Context();
 
-        private void BtnKitapEkle_Click(object sender, EventArgs e)
+        Context c = new Context();
+        private void BtnKtpEkle_Click(object sender, EventArgs e)
         {
-            Kitap k = new Kitap();
-            k.kitapAd = TxtKitapAdi.Text;
-            k.kitapYazar = TxtYazarAdi.Text;
-            k.kitapKonum = TxtBolumveRaf.Text;
-            // kitap yazar bilinmiyor olabilir, raf bilgisi sonradan eklenecek olabilir o nedenle isim yeterli
-            if (k.kitapAd == null){
-                MessageBox.Show("Kitabın Adı boş bırakılamaz. Lütfen kitabın adını giriniz.");
-            }
-            else {
-                c.Kitaps.Add(k);
-                c.SaveChanges();
-                MessageBox.Show("Kitap eklendi");
-            }
+            Kitap kitaplar = new Kitap();
+            kitaplar.kitapAd = TxtKitapAdi.Text;
+            kitaplar.kitapYazar = TxtYazarAdi.Text;
+            kitaplar.kitapKonum = TxtBolumRaf.Text;
+            c.Kitaps.Add(kitaplar);
+            c.SaveChanges();
+
+            var kList = c.Kitaps.ToList();
+            dataGridView1.DataSource = kList.ToList();
+            //dataGridView1.Columns[1].HeaderText = "Kitabın Adı";
+
+        }
+        public void Listele()
+        {
+            var kitaplar = c.Kitaps.ToList();
+            dataGridView1.DataSource = kitaplar.ToList();
+        }
+
+        private void KitapEkleForm_Load(object sender, EventArgs e)
+        {
+            Listele();
         }
 
     }

@@ -38,8 +38,7 @@
                     {
                         oduncId = c.Int(nullable: false, identity: true),
                         oduncKitapId = c.Int(nullable: false),
-                        oduncKitapAd = c.String(),
-                        oduncKullaniciTc = c.String(),
+                        oduncKullaniciId = c.Int(nullable: false),
                         oduncTeslimDurum = c.Boolean(nullable: false),
                     })
                 .PrimaryKey(t => t.oduncId);

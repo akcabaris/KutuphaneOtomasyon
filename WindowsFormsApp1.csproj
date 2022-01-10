@@ -72,17 +72,41 @@
     <Compile Include="GirisForm.Designer.cs">
       <DependentUpon>GirisForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="KitapDuzenleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapDuzenleForm.Designer.cs">
+      <DependentUpon>KitapDuzenleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="KitapEkleForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="KitapEkleForm.Designer.cs">
       <DependentUpon>KitapEkleForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="KitapListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapListForm.Designer.cs">
+      <DependentUpon>KitapListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapSilForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapSilForm.Designer.cs">
+      <DependentUpon>KitapSilForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="KullaniciEkleForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="KullaniciEkleForm.Designer.cs">
       <DependentUpon>KullaniciEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciGuncelle.Designer.cs">
+      <DependentUpon>KullaniciGuncelle.cs</DependentUpon>
     </Compile>
     <Compile Include="KullaniciListForm.cs">
       <SubType>Form</SubType>
@@ -96,9 +120,9 @@
     <Compile Include="KullaniciSilForm.Designer.cs">
       <DependentUpon>KullaniciSilForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202201081755368_deneme1.cs" />
-    <Compile Include="Migrations\202201081755368_deneme1.designer.cs">
-      <DependentUpon>202201081755368_deneme1.cs</DependentUpon>
+    <Compile Include="Migrations\202201101630595_deneme1.cs" />
+    <Compile Include="Migrations\202201101630595_deneme1.designer.cs">
+      <DependentUpon>202201101630595_deneme1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Odunc.cs" />
@@ -110,16 +134,40 @@
     <Compile Include="IslemPanel.Designer.cs">
       <DependentUpon>IslemPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="OduncForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OduncForm.Designer.cs">
+      <DependentUpon>OduncForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TeslimAlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeslimAlForm.Designer.cs">
+      <DependentUpon>TeslimAlForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GirisForm.resx">
       <DependentUpon>GirisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapDuzenleForm.resx">
+      <DependentUpon>KitapDuzenleForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KitapEkleForm.resx">
       <DependentUpon>KitapEkleForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KitapListForm.resx">
+      <DependentUpon>KitapListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapSilForm.resx">
+      <DependentUpon>KitapSilForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KullaniciEkleForm.resx">
       <DependentUpon>KullaniciEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciGuncelle.resx">
+      <DependentUpon>KullaniciGuncelle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KullaniciListForm.resx">
       <DependentUpon>KullaniciListForm.cs</DependentUpon>
@@ -127,11 +175,14 @@
     <EmbeddedResource Include="KullaniciSilForm.resx">
       <DependentUpon>KullaniciSilForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201081755368_deneme1.resx">
-      <DependentUpon>202201081755368_deneme1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="IslemPanel.resx">
       <DependentUpon>IslemPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201101630595_deneme1.resx">
+      <DependentUpon>202201101630595_deneme1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OduncForm.resx">
+      <DependentUpon>OduncForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -143,6 +194,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TeslimAlForm.resx">
+      <DependentUpon>TeslimAlForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -213,6 +267,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\66909_user_deny_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books-stack-of-three1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books-stack-of-three11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class KullaniciSilForm
+    partial class KitapSilForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,57 +29,44 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.BtnSil = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // button1
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources._66909_user_deny_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(342, 38);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
+            this.button1.Location = new System.Drawing.Point(342, 376);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Sil";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(25)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(193, 172);
+            this.dataGridView1.Location = new System.Drawing.Point(157, 139);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(449, 178);
-            this.dataGridView1.TabIndex = 14;
+            this.dataGridView1.Size = new System.Drawing.Size(501, 150);
+            this.dataGridView1.TabIndex = 1;
             // 
-            // BtnSil
-            // 
-            this.BtnSil.Location = new System.Drawing.Point(395, 366);
-            this.BtnSil.Name = "BtnSil";
-            this.BtnSil.Size = new System.Drawing.Size(75, 23);
-            this.BtnSil.TabIndex = 15;
-            this.BtnSil.Text = "Sil";
-            this.BtnSil.UseVisualStyleBackColor = true;
-            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
-            // 
-            // KullaniciSilForm
+            // KitapSilForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.BtnSil);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "KullaniciSilForm";
-            this.Text = "KullaniciSilForm";
+            this.Name = "KitapSilForm";
+            this.Text = "KitapSilForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.KullaniciSilForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.KitapSilForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -87,8 +74,7 @@ namespace WindowsFormsApp1
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button BtnSil;
     }
 }

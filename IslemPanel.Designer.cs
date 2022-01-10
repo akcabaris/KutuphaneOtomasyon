@@ -31,6 +31,8 @@ namespace WindowsFormsApp1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.BtnTeslimAl = new System.Windows.Forms.Button();
             this.BtnOduncİslem = new System.Windows.Forms.Button();
             this.BtnKitapDuzenle = new System.Windows.Forms.Button();
             this.BtnKitapSil = new System.Windows.Forms.Button();
@@ -40,13 +42,13 @@ namespace WindowsFormsApp1
             this.BtnKullaniciSil = new System.Windows.Forms.Button();
             this.BtnKullaniciEkle = new System.Windows.Forms.Button();
             this.BtnKullanicilar = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(25)))));
+            this.panel1.Controls.Add(this.BtnTeslimAl);
             this.panel1.Controls.Add(this.BtnOduncİslem);
             this.panel1.Controls.Add(this.BtnKitapDuzenle);
             this.panel1.Controls.Add(this.BtnKitapSil);
@@ -56,11 +58,38 @@ namespace WindowsFormsApp1
             this.panel1.Controls.Add(this.BtnKullaniciSil);
             this.panel1.Controls.Add(this.BtnKullaniciEkle);
             this.panel1.Controls.Add(this.BtnKullanicilar);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 521);
+            this.panel1.Size = new System.Drawing.Size(200, 611);
             this.panel1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(25)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(200, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(784, 20);
+            this.panel2.TabIndex = 1;
+            // 
+            // BtnTeslimAl
+            // 
+            this.BtnTeslimAl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(25)))));
+            this.BtnTeslimAl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnTeslimAl.FlatAppearance.BorderSize = 0;
+            this.BtnTeslimAl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnTeslimAl.ForeColor = System.Drawing.Color.White;
+            this.BtnTeslimAl.Image = global::WindowsFormsApp1.Properties.Resources.books_stack_of_three1;
+            this.BtnTeslimAl.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnTeslimAl.Location = new System.Drawing.Point(0, 516);
+            this.BtnTeslimAl.Name = "BtnTeslimAl";
+            this.BtnTeslimAl.Size = new System.Drawing.Size(200, 64);
+            this.BtnTeslimAl.TabIndex = 9;
+            this.BtnTeslimAl.Text = "Teslim Al";
+            this.BtnTeslimAl.UseVisualStyleBackColor = false;
+            this.BtnTeslimAl.Click += new System.EventHandler(this.BtnTeslimAl_Click);
             // 
             // BtnOduncİslem
             // 
@@ -69,7 +98,7 @@ namespace WindowsFormsApp1
             this.BtnOduncİslem.FlatAppearance.BorderSize = 0;
             this.BtnOduncİslem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnOduncİslem.ForeColor = System.Drawing.Color.White;
-            this.BtnOduncİslem.Image = global::WindowsFormsApp1.Properties.Resources.image;
+            this.BtnOduncİslem.Image = global::WindowsFormsApp1.Properties.Resources.books_stack_of_three11;
             this.BtnOduncİslem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnOduncİslem.Location = new System.Drawing.Point(0, 452);
             this.BtnOduncİslem.Name = "BtnOduncİslem";
@@ -77,6 +106,7 @@ namespace WindowsFormsApp1
             this.BtnOduncİslem.TabIndex = 8;
             this.BtnOduncİslem.Text = "Odunc";
             this.BtnOduncİslem.UseVisualStyleBackColor = false;
+            this.BtnOduncİslem.Click += new System.EventHandler(this.BtnOduncİslem_Click);
             // 
             // BtnKitapDuzenle
             // 
@@ -93,6 +123,7 @@ namespace WindowsFormsApp1
             this.BtnKitapDuzenle.Text = "Duzenle";
             this.BtnKitapDuzenle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnKitapDuzenle.UseVisualStyleBackColor = false;
+            this.BtnKitapDuzenle.Click += new System.EventHandler(this.BtnKitapDuzenle_Click);
             // 
             // BtnKitapSil
             // 
@@ -109,6 +140,7 @@ namespace WindowsFormsApp1
             this.BtnKitapSil.Text = "Sil";
             this.BtnKitapSil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnKitapSil.UseVisualStyleBackColor = false;
+            this.BtnKitapSil.Click += new System.EventHandler(this.BtnKitapSil_Click);
             // 
             // BtnKitapEkle
             // 
@@ -125,6 +157,7 @@ namespace WindowsFormsApp1
             this.BtnKitapEkle.Text = "Ekle";
             this.BtnKitapEkle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnKitapEkle.UseVisualStyleBackColor = false;
+            this.BtnKitapEkle.Click += new System.EventHandler(this.BtnKitapEkle_Click);
             // 
             // BtnKitaplar
             // 
@@ -158,6 +191,7 @@ namespace WindowsFormsApp1
             this.BtnKullaniciDuzenle.Text = "Duzenle";
             this.BtnKullaniciDuzenle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnKullaniciDuzenle.UseVisualStyleBackColor = false;
+            this.BtnKullaniciDuzenle.Click += new System.EventHandler(this.BtnKullaniciDuzenle_Click);
             // 
             // BtnKullaniciSil
             // 
@@ -210,20 +244,11 @@ namespace WindowsFormsApp1
             this.BtnKullanicilar.UseVisualStyleBackColor = false;
             this.BtnKullanicilar.Click += new System.EventHandler(this.BtnKullanicilar_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(45)))), ((int)(((byte)(10)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(200, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(584, 60);
-            this.panel2.TabIndex = 1;
-            // 
             // AnaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 521);
+            this.ClientSize = new System.Drawing.Size(984, 611);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -249,5 +274,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button BtnKitapEkle;
         private System.Windows.Forms.Button BtnKitaplar;
         private System.Windows.Forms.Button BtnOduncİslem;
+        private System.Windows.Forms.Button BtnTeslimAl;
     }
 }

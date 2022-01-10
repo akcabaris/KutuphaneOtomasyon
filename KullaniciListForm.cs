@@ -21,6 +21,9 @@ namespace WindowsFormsApp1
             Context c = new Context();
             var kullanicililar = c.Kullanicis.ToList();
             dataGridView1.DataSource = kullanicililar.ToList();
+            dataGridView1.Columns[2].Visible = false;
+
+            dataGridView1.Columns[6].Visible = false;
         }
         private void KullaniciListForm_Load(object sender, EventArgs e)
         {

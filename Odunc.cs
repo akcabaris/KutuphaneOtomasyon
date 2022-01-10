@@ -14,8 +14,7 @@ namespace WindowsFormsApp1
         [Key]
         public int oduncId { get; set; }
         public int oduncKitapId { get; set; }
-        public string oduncKitapAd { get; set; }
-        public string oduncKullaniciTc { get; set; }
+        public int oduncKullaniciId { get; set; }
         public Boolean oduncTeslimDurum { get; set; }
     }
 }
